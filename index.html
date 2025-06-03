@@ -21,7 +21,7 @@
     .contenedor {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 6px 10px; /* menos separación vertical y horizontal */
+      gap: 6px 10px;
       padding: 10px;
       max-width: 100vw;
       box-sizing: border-box;
@@ -30,7 +30,7 @@
     .aporte {
       color: white;
       font-weight: bold;
-      font-size: clamp(0.9rem, 2.8vw, 1.4rem);
+      font-size: 1rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -56,12 +56,18 @@
     }
 
     @media (max-width: 768px) {
-      .aporte {
-        font-size: clamp(0.7rem, 2.2vw, 1.2rem);
+      body {
+        background: url('fondo-latino.png') no-repeat top center scroll;
+        background-size: 100% auto;
       }
+
+      .aporte {
+        font-size: clamp(0.9rem, 2.8vw, 1.4rem);
+      }
+
       .contenedor {
         grid-template-columns: repeat(4, 1fr);
-        gap: 6px 10px;
+        gap: 4px 6px;
       }
     }
   </style>
