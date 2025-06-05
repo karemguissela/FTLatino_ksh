@@ -22,7 +22,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 6px 10px;
       padding: 10px;
-      max-width: 120vw;
+      max-width: 90vw;
       max-height: 70vh; /* Limita la altura para mantener todo dentro del marco visual */
       overflow-y: auto;
       box-sizing: border-box;
@@ -60,14 +60,14 @@
     }
 
     @media (max-width: 768px) {
-      .contenedor {
-        grid-template-columns: repeat(2, 1fr);
-        max-height: 65vh;
-      }
+    .contenedor {
+    grid-template-columns: repeat(3, 1fr); /* mantiene las 3 columnas en móvil */
+    max-height: 65vh;
+  }
 
-      .aporte {
-        font-size: clamp(0.9rem, 2.8vw, 1.2rem);
-      }
+  .aporte {
+    font-size: clamp(0.7rem, 2.5vw, 1rem); /* un poco más pequeño para que quepa mejor */
+  }
     }
 
     /* Scrollbar estilo fino */
