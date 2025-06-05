@@ -60,13 +60,15 @@
     }
 
     @media (max-width: 768px) {
-    .contenedor {
-    grid-template-columns: repeat(3, 1fr); /* mantiene las 3 columnas en móvil */
-    max-height: 65vh;
+ .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    max-height: 85vh; /* ¡aquí le damos más altura solo en móvil! */
   }
 
   .aporte {
-    font-size: clamp(0.7rem, 2.5vw, 1rem); /* un poco más pequeño para que quepa mejor */
+    font-size: clamp(0.85rem, 3vw, 1.3rem);
   }
     }
 
