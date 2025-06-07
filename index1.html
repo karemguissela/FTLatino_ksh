@@ -71,15 +71,21 @@
     }
 
     @media (max-width: 768px) {
-      .contenedor {
-        grid-template-columns: repeat(3, 1fr); /* Se mantiene 3 columnas en móvil */
-        height: 60vh; /* Mismo alto que en desktop */
-        width: 85vw; /* Mismo ancho */
-      }
+     body {
+    align-items: flex-start;    /* 👈 alinea arriba solo en móvil */
+    padding-top: 5vh;           /* 👈 espacio opcional superior */
+  }
 
-      .aporte {
-        font-size: clamp(0.8rem, 3vw, 1.1rem);
-      }
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    height: 60vh;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .aporte {
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+  }
     }
   </style>
 </head>
