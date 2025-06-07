@@ -17,18 +17,18 @@
       min-height: 100vh;
     }
 
-    .contenedor {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px 10px;
-      padding: 10px;
-      width: 90vw;
-      height: 70vh; /* Alto fijo en todos los dispositivos */
-      overflow-y: auto;
-      box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-    }
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px 10px;
+  padding: 10px;
+  width: 85vw;         /* Se mantiene igual en todos los tamaños */
+  height: 70vh;        /* En escritorio el contenedor es más alto */
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
 
     .aporte {
       color: white;
