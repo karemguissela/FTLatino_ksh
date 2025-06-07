@@ -72,7 +72,11 @@
 
     @media (max-width: 768px) {
  
-
+  body {
+    align-items: flex-start;   /* no centrado, pero sí controlado */
+    padding-top: 10vh;          /* 👈 ajusta este número para subir o bajar */
+  }
+      
   .contenedor {
     grid-template-columns: repeat(3, 1fr);
     height: 61vh;
