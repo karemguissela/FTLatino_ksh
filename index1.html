@@ -22,14 +22,15 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 6px 10px;
   padding: 10px;
-  width: 85vw;         /* Se mantiene igual en todos los tamaños */
-  height: 70vh;        /* En escritorio el contenedor es más alto */
+  width: 85vw;             /* se adapta a cualquier pantalla */
+  max-width: 700px;        /* límite para escritorio */
+  height: 70vh;            /* alto normal */
   overflow-y: auto;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  margin: 0 auto;          /* ✅ centro horizontalmente SIEMPRE */
 }
-
     .aporte {
       color: white;
       font-weight: bold;
