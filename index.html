@@ -1,43 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚚 Team Food Truck Latino</title>
+  <title>🚚 Team Food Truck Latino</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: url('fondo-latino.png') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .contenedor {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px 10px;
-      padding: 10px;
-      max-width: 100vw;
-      box-sizing: border-box;
-    }
-
-    .aporte {
-    color: white;
-  font-weight: bold;
-  font-size: 0.90rem;
-  text-align: center;
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('fondo-latino.png') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
-  animation: flotar 4s ease-in-out infinite;
-  font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center; /* 👈 esto ayuda en móviles para mantener alineado */
+}
 
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px 10px;
+  padding: 10px;
+  width: 85vw;             /* se adapta a cualquier pantalla */
+  max-width: 400px;        /* límite para escritorio */
+  height: 80vh;            /* alto normal */
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 0 auto;          /* ✅ centro horizontalmente SIEMPRE */
+}
+    .aporte {
+      color: white;
+      font-weight: bold;
+      font-size: 0.95rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: flotar 4s ease-in-out infinite;
+      font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
     }
 
     .estrella {
@@ -57,26 +61,37 @@
       100% { opacity: 1; transform: scale(1.2); }
     }
 
+    /* Scroll discreto */
+    .contenedor::-webkit-scrollbar {
+      width: 6px;
+    }
+    .contenedor::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+    }
+
     @media (max-width: 768px) {
-      body {
-        background: url('fondo-latino.png') no-repeat center center scroll;
-        background-size: cover;
-      }
+ 
+  body {
+    align-items: flex-start;   /* no centrado, pero sí controlado */
+    padding-top: 14vh;          /* 👈 ajusta este número para subir o bajar */
+  }
+      
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    height: 64vh;
+    width: 85vw;
+    margin: 0 auto;
+  }
 
-      .aporte {
-        font-size: clamp(0.9rem, 2.8vw, 1.4rem);
-      }
-
-      .contenedor {
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 10px;
-        column-gap: 12px;
-      }
+  .aporte {
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+  }
     }
   </style>
 </head>
 <body>
-  <div class="contenedor">
+ <div class="contenedor">
   <div class="aporte"><span class="estrella">✨</span>Lidia 🇦🇷</div>
   <div class="aporte"><span class="estrella">✨</span>Mayra 🇦🇷</div>
   <div class="aporte"><span class="estrella">✨</span>Gabi 🇦🇷</div>
@@ -147,12 +162,22 @@
   <div class="aporte"><span class="estrella">✨</span>Tina 🇩🇴</div>
   <div class="aporte"><span class="estrella">✨</span>Marbella 🇻🇪</div>
   <div class="aporte"><span class="estrella">✨</span>Katy C. 🇸🇻</div>
-
  <div class="aporte"><span class="estrella">✨</span>Noemi 🇪🇸</div>
+   
+ <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+    <div class="aporte"><span class="estrella">✨</span></div>
+   
 </div>
-
-
-
 
 
 </body>
